@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sequel_Lite" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7a-2x-rkT">
+                                <rect key="frame" x="0.0" y="28" width="414" height="62"/>
+                                <color key="backgroundColor" red="0.16090773589999999" green="0.19891931060000001" blue="0.26439038209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="yCC-gb-L4j"/>
+                                </constraints>
+                                <state key="normal" title="Create Table"/>
+                                <connections>
+                                    <action selector="createTable" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gez-yf-eUj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhj-SC-zg2">
+                                <rect key="frame" x="0.0" y="98" width="414" height="62"/>
+                                <color key="backgroundColor" red="0.16090773589999999" green="0.19891931060000001" blue="0.26439038209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="zbt-bX-hQp"/>
+                                </constraints>
+                                <state key="normal" title="List Users"/>
+                                <connections>
+                                    <action selector="listUsers" destination="BYZ-38-t0r" eventType="touchUpInside" id="FKA-qT-JI0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A15-fd-cqY">
+                                <rect key="frame" x="0.0" y="238" width="414" height="62"/>
+                                <color key="backgroundColor" red="0.16090773589999999" green="0.19891931060000001" blue="0.26439038209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="E8z-vH-jlL"/>
+                                </constraints>
+                                <state key="normal" title="Update User"/>
+                                <connections>
+                                    <action selector="updateUser" destination="BYZ-38-t0r" eventType="touchUpInside" id="A1v-Rv-YUu"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WP9-No-fSM">
+                                <rect key="frame" x="20" y="378" width="374" height="358"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKS-Qn-tnV">
+                                <rect key="frame" x="0.0" y="308" width="414" height="62"/>
+                                <color key="backgroundColor" red="0.16090773589999999" green="0.19891931060000001" blue="0.26439038209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="2XX-jP-O3q"/>
+                                </constraints>
+                                <state key="normal" title="Delete User"/>
+                                <connections>
+                                    <action selector="deleteUser" destination="BYZ-38-t0r" eventType="touchUpInside" id="iAU-87-VUk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFH-cT-rMK">
+                                <rect key="frame" x="0.0" y="168" width="414" height="62"/>
+                                <color key="backgroundColor" red="0.16090773589999999" green="0.19891931060000001" blue="0.26439038209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="5B0-M1-WIZ"/>
+                                </constraints>
+                                <state key="normal" title="Insert User"/>
+                                <connections>
+                                    <action selector="insertUser" destination="BYZ-38-t0r" eventType="touchUpInside" id="HOU-rG-87A"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="A15-fd-cqY" firstAttribute="top" secondItem="KFH-cT-rMK" secondAttribute="bottom" constant="8" symbolic="YES" id="1t3-MU-xLN"/>
+                            <constraint firstItem="wKS-Qn-tnV" firstAttribute="top" secondItem="A15-fd-cqY" secondAttribute="bottom" constant="8" symbolic="YES" id="2kE-Gr-rPN"/>
+                            <constraint firstItem="W7a-2x-rkT" firstAttribute="trailing" secondItem="Bhj-SC-zg2" secondAttribute="trailing" id="2wh-rR-fOW"/>
+                            <constraint firstAttribute="trailing" secondItem="W7a-2x-rkT" secondAttribute="trailing" id="AUc-O3-JQs"/>
+                            <constraint firstItem="Bhj-SC-zg2" firstAttribute="top" secondItem="W7a-2x-rkT" secondAttribute="bottom" constant="8" symbolic="YES" id="ESb-Df-cyY"/>
+                            <constraint firstItem="KFH-cT-rMK" firstAttribute="top" secondItem="Bhj-SC-zg2" secondAttribute="bottom" constant="8" symbolic="YES" id="LY2-mb-vvT"/>
+                            <constraint firstItem="W7a-2x-rkT" firstAttribute="leading" secondItem="Bhj-SC-zg2" secondAttribute="leading" id="aqt-hY-nrh"/>
+                            <constraint firstItem="Bhj-SC-zg2" firstAttribute="trailing" secondItem="KFH-cT-rMK" secondAttribute="trailing" id="chC-I3-8bz"/>
+                            <constraint firstItem="W7a-2x-rkT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fSk-IE-VAs"/>
+                            <constraint firstItem="WP9-No-fSM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gBC-9Q-Nbv"/>
+                            <constraint firstItem="WP9-No-fSM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="hwJ-0A-j7b"/>
+                            <constraint firstItem="A15-fd-cqY" firstAttribute="trailing" secondItem="wKS-Qn-tnV" secondAttribute="trailing" id="m1i-Dn-VB6"/>
+                            <constraint firstItem="Bhj-SC-zg2" firstAttribute="leading" secondItem="KFH-cT-rMK" secondAttribute="leading" id="o8a-E5-rJd"/>
+                            <constraint firstItem="W7a-2x-rkT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="ohb-k9-VvI"/>
+                            <constraint firstItem="KFH-cT-rMK" firstAttribute="leading" secondItem="A15-fd-cqY" secondAttribute="leading" id="pkZ-DO-g56"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WP9-No-fSM" secondAttribute="bottom" id="reS-48-2tm"/>
+                            <constraint firstItem="WP9-No-fSM" firstAttribute="top" secondItem="wKS-Qn-tnV" secondAttribute="bottom" constant="8" id="uHg-sy-rTE"/>
+                            <constraint firstItem="KFH-cT-rMK" firstAttribute="trailing" secondItem="A15-fd-cqY" secondAttribute="trailing" id="veJ-g7-uat"/>
+                            <constraint firstItem="A15-fd-cqY" firstAttribute="leading" secondItem="wKS-Qn-tnV" secondAttribute="leading" id="wP8-nH-m8a"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultView" destination="WP9-No-fSM" id="FHF-3A-pwb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="138.58695652173915"/>
+        </scene>
+    </scenes>
+</document>
